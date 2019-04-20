@@ -1,0 +1,33 @@
+// buildscript 代码块中脚本优先执行
+
+plugins {
+	id 'org.springframework.boot' version '1.5.2.RELEASE'
+	id 'java'
+}
+
+//插件
+apply plugin: 'io.spring.dependency-management'
+
+//指定了生成的编译文件的版本，默认是打成了 jar 包
+group = 'com.springcloud.weather'
+version = '0.0.1-SNAPSHOT'
+// 指定编译 .java 文件的 JDK 版本
+sourceCompatibility = '1.8'
+
+repositories {
+	//mavenCentral()
+	maven {
+		url 'http://maven.aliyun.com/nexus/content/groups/public/'
+	}
+}
+// 依赖关系
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	compile 'org.apache.httpcomponents:httpclient:4.5.8'
+
+	// Redis
+	compile('org.springframework.boot:spring-boot-starter-data-redis')
+
+}
