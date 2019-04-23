@@ -23,11 +23,18 @@ repositories {
 // 依赖关系
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
 	compile 'org.apache.httpcomponents:httpclient:4.5.8'
 
+	//quartz
+	compile('org.springframework.boot:spring-boot-starter-quartz')
+
+
 	// Redis
 	compile('org.springframework.boot:spring-boot-starter-data-redis')
+
+
 
 }
