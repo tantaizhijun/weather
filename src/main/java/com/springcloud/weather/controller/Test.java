@@ -1,4 +1,4 @@
-package com.springcloud.weather.weather.controller;
+package com.springcloud.weather.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

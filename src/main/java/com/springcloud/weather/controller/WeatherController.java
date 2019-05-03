@@ -1,7 +1,7 @@
-package com.springcloud.weather.weather.controller;
+package com.springcloud.weather.controller;
 
-import com.springcloud.weather.weather.service.WeatherService;
-import com.springcloud.weather.weather.weatherPojo.WeatherResponse;
+import com.springcloud.weather.service.WeatherService;
+import com.springcloud.weather.weatherPojo.weather.WeatherResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

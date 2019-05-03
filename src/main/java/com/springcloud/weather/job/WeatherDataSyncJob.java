@@ -1,18 +1,17 @@
-package com.springcloud.weather.weather.job;
+package com.springcloud.weather.job;
 
-import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.quartz.QuartzJobBean;
+
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.quartz.QuartzJobBean;
 
-import java.util.logging.Logger;
 
 public class WeatherDataSyncJob extends QuartzJobBean {
 
 
-
-
-    private final static Logger logger = LoggerFactory.getLogger(WeatherDataSyncJob.class)
+    private final static Logger logger = LoggerFactory.getLogger(WeatherDataSyncJob.class);
 
     //job 执行的方法
     @Override

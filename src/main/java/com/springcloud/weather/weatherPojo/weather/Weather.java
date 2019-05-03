@@ -1,4 +1,4 @@
-package com.springcloud.weather.weather.weatherPojo;
+package com.springcloud.weather.weatherPojo.weather;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,7 +11,7 @@ public class Weather implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String city;                //城市
-    private String aqi;                 //
+    private String aqi;                 //空气质量指数
     private String ganmao;              //保暖提示
     private String wendu;               //温度
     private Yesterday yesterday;        //昨日天气

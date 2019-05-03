@@ -1,4 +1,4 @@
-package com.springcloud.weather.weather.weatherPojo;
+package com.springcloud.weather.weatherPojo.weather;
 
 import java.io.Serializable;
 

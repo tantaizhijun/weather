@@ -1,6 +1,6 @@
-package com.springcloud.weather.weather.service;
+package com.springcloud.weather.service;
 
-import com.springcloud.weather.weather.weatherPojo.WeatherResponse;
+import com.springcloud.weather.weatherPojo.weather.WeatherResponse;
 
 /**
  * 天气查询接口
@@ -22,5 +22,12 @@ public interface WeatherService {
      * @return
      */
     WeatherResponse getDataByCityName(String cityName);
+
+
+    /**
+     * 根据城市ID来同步天气
+     * @param cityId
+     */
+    void syncDateByCityId(String cityId);
 
 }

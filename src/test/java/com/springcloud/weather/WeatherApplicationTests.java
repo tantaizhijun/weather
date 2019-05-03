@@ -1,4 +1,4 @@
-package com.springcloud.weather.weather;
+package com.springcloud.weather;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
